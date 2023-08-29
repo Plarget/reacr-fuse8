@@ -1,0 +1,37 @@
+@import "@/shared/styles/mixin.pcss";
+
+.history-jokes {
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    transition: 0.3s;
+
+    &-icon {
+      --history-jokes-link-icon-size: 50px;
+      width: var(--history-jokes-link-icon-size);
+      height: var(--history-jokes-link-icon-size);
+
+      &-wrapper {
+        display: inline-flex;
+      }
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  &__label {
+    @mixin flex-center;
+    height: 200px;
+  }
+}

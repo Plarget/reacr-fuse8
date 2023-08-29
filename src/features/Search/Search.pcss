@@ -1,0 +1,37 @@
+@import "@/shared/styles/mixin.pcss";
+
+.search {
+  max-width: 626px;
+  margin-inline: auto;
+
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    transition: 0.3s;
+
+    &-icon {
+      --search-link-icon-size: 35px;
+      width: var(--search-link-icon-size);
+      height: var(--search-link-icon-size);
+
+      &-wrapper {
+        display: inline-flex;
+      }
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__input {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-left: 36px;
+  }
+}

@@ -1,0 +1,39 @@
+@import "@/shared/styles/mixin.pcss";
+
+.joke {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow-blured);
+  padding-inline: var(--joke-padding);
+  padding-top: var(--joke-padding);
+  padding-bottom: 25px;
+  transition: 0.3s;
+  @media (hover: hover) {
+    &:hover {
+      scale: 1.018;
+    }
+  }
+
+  @media (max-width: 480px) {
+    row-gap: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__text {
+    flex-grow: 1;
+    overflow-wrap: anywhere;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+
+    &-id {
+      overflow-wrap: anywhere;
+    }
+  }
+}
