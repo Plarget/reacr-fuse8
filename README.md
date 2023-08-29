@@ -1,4 +1,5 @@
 # Тестовое задание Fuse8
+Сайт: https://master--polite-cheesecake-12431b.netlify.app/
 
 - React
 - Vite
